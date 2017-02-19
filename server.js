@@ -7,9 +7,6 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-app.get('/file1', function(req,res){
-   res.send('TOUR PAGE.'); 
-});
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
