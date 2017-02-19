@@ -24,6 +24,9 @@ app.get('/ui/madi.png', function (req, res) {
 app.get('/one',function(req,res){
   res.send('Your requested function will going to be served.');  
 });
+app.get('/two',function(res,req){
+   res.send('Your article two is going to be served.'); 
+});
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
