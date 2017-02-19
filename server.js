@@ -7,11 +7,11 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html')); //When get is made to slash the function get executed.
-});
 app.get('/file1',function(res,req){
    res.send('TOUR PAGE.'); 
+});
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html')); //When get is made to slash the function get executed.
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
