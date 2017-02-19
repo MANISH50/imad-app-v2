@@ -13,6 +13,9 @@ app.get('/', function (req, res) {
 app.get('/myarc',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'myarc.html'));
 });
+app.get('/myarc1',function(req,res){
+    res.sendFile(path.join(__dirname, 'ui', 'myarc.html'));
+});
 app.get('/other',function(res,req){
    res.sendFile(path.join(_dirname,'ui','myarc1.html')); 
 });
