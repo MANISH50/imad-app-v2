@@ -1,4 +1,7 @@
-var express = require('express');
+/*
+We had imported something software pacakges.
+*/
+var express = require('express'); //Library which is used to create the  web server.
 var morgan = require('morgan');
 var path = require('path');
 
